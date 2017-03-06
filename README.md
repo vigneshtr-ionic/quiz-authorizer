@@ -1,1 +1,1 @@
-# quiz-authorizre
+# quiz-authorizer

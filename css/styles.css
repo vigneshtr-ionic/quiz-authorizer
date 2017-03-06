@@ -1,0 +1,123 @@
+ body,
+ html,
+ .main-container,
+ .wrapper {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+ .left-pane,
+ .right-pane {
+     height: 100%;
+     overflow: auto;
+ }
+ 
+ .right-pane .right-wrapper {
+     padding: 0;
+ }
+ 
+ .right-pane .right-wrapper .menu-handle {
+     top: 10px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ .left-pane {
+     background-color: #BDD7EE;
+     border-right: 1px solid #93B4D0;
+     transition-duration: 250ms;
+     -webkit-transition-duration: 250ms;
+     transition-property: transform;
+     position: absolute;
+     transform: translateX(0);
+     z-index: 10000;
+ }
+ 
+ .right-pane {
+     background-color: #DEEBF7;
+ }
+ 
+ .right-pane .wrapper,
+ .right-pane h4,
+ .left-pane>.col-md-12 {
+     margin-top: 30px;
+ }
+ 
+ .left-pane .wrapper .heading,
+ .right-pane .wrapper .heading {
+     font-weight: bold;
+     font-size: 16px;
+     margin-bottom: 30px;
+ }
+ 
+ .right-pane .wrapper .question-container,
+ .right-pane .wrapper .options-container {
+     line-height: 30px;
+     vertical-align: middle;
+     display: inline-block;
+ }
+ 
+ .buttons input[type=file] {
+     display: none;
+ }
+ 
+ .img-wrapper {
+     padding: 10px;
+     text-align: center;
+ }
+ 
+ .img-wrapper img {
+     width: 100px;
+ }
+ 
+ .right-pane .wrapper .options-container {
+     margin-top: 50px;
+     padding: 0;
+ }
+ 
+ .left-pane .wrapper .list li {
+     padding: 5px;
+     cursor: pointer;
+ }
+ 
+ .left-pane .wrapper .list li.selected {
+     font-weight: bold;
+ }
+ 
+ body .main-container input {
+     background: none;
+     border: 1px solid #93B4D0;
+     padding: 0;
+     height: 30px;
+     text-indent: 5px;
+     outline: 0;
+     font-weight: normal;
+ }
+ 
+ .buttons {
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+     padding: 5px;
+ }
+ 
+ .buttons button {
+     margin-right: 10px;
+ }
+ 
+ @media (max-width:768px) {
+     .left-pane {
+         transform: translateX(-100%);
+     }
+     .right-pane .right-wrapper .menu-handle {
+         display: block;
+     }
+ }
+ 
+ .options-container .remove {
+     position: absolute;
+     right: 0px;
+     top: 5px;
+     cursor: pointer;
+ }
